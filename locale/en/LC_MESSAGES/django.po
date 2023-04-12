@@ -1,0 +1,300 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-14 06:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app_blogs/apps.py:8 app_blogs/models.py:14
+msgid "блоги"
+msgstr "blogs"
+
+#: app_blogs/forms.py:7
+msgid "Выбрать файл "
+msgstr "Select file"
+
+#: app_blogs/forms.py:12
+msgid "Файлы"
+msgstr "Files"
+
+#: app_blogs/forms.py:13
+msgid "Описание"
+msgstr "Description"
+
+#: app_blogs/models.py:8 app_users/models.py:8
+msgid "пользователь"
+msgstr "user"
+
+#: app_blogs/models.py:9
+msgid "название блога"
+msgstr "blog name"
+
+#: app_blogs/models.py:10
+msgid "строка тегов"
+msgstr "tag string"
+
+#: app_blogs/models.py:13 app_blogs/models.py:22
+msgid "блог"
+msgstr "blog"
+
+#: app_blogs/models.py:23
+msgid "заголовок"
+msgstr "title"
+
+#: app_blogs/models.py:24
+msgid "содержание"
+msgstr "text"
+
+#: app_blogs/models.py:33 app_blogs/models.py:39
+msgid "статья"
+msgstr "entry"
+
+#: app_blogs/models.py:34
+msgid "статьи"
+msgstr "entries"
+
+#: app_blogs/models.py:40 app_blogs/models.py:44
+msgid "файл"
+msgstr "file"
+
+#: app_blogs/models.py:41
+msgid "описание"
+msgstr "description"
+
+#: app_blogs/models.py:45
+msgid "файлы"
+msgstr "files"
+
+#: app_blogs/templates/app_blogs/blog_edit.html:6
+#: app_blogs/templates/app_blogs/blog_edit.html:11
+msgid "Редактирование блога"
+msgstr "Blog editing"
+
+#: app_blogs/templates/app_blogs/blog_edit.html:14
+#: app_blogs/templates/app_blogs/blog_list.html:15
+#: app_blogs/templates/app_blogs/entry_edit.html:14
+#: app_blogs/templates/app_blogs/entry_list.html:18
+#: app_users/templates/app_users/profile-edit.html:13
+msgid "Редактировать"
+msgstr "Edit"
+
+#: app_blogs/templates/app_blogs/blog_list.html:6
+#: app_users/templates/app_users/base_template.html:54
+msgid "Мои блоги"
+msgstr "My blogs"
+
+#: app_blogs/templates/app_blogs/blog_list.html:10
+msgid "Список ваших блогов"
+msgstr "List of your blogs"
+
+#: app_blogs/templates/app_blogs/blog_list.html:19
+msgid "У вас ещё нет блогов"
+msgstr "You don't have blogs yet"
+
+#: app_blogs/templates/app_blogs/blog_list.html:22
+msgid "Создать новый блог"
+msgstr "Create a new blog"
+
+#: app_blogs/templates/app_blogs/entry_all.html:6
+msgid "Домашняя страница"
+msgstr "Home page"
+
+#: app_blogs/templates/app_blogs/entry_all.html:10
+msgid "Список опубликованных статей"
+msgstr "List of published articles"
+
+#: app_blogs/templates/app_blogs/entry_all.html:15
+msgid "Автор"
+msgstr "Author"
+
+#: app_blogs/templates/app_blogs/entry_all.html:22
+#: app_blogs/templates/app_blogs/entry_detail.html:17
+#: app_blogs/templates/app_blogs/entry_list.html:16
+msgid "Опубликовано"
+msgstr "Published at"
+
+#: app_blogs/templates/app_blogs/entry_all.html:29
+msgid "Статьи не найдены"
+msgstr "Articles not found"
+
+#: app_blogs/templates/app_blogs/entry_detail.html:18
+msgid "Изменено"
+msgstr "Changed at"
+
+#: app_blogs/templates/app_blogs/entry_edit.html:6
+#: app_blogs/templates/app_blogs/entry_edit.html:11
+msgid "Редактирование статьи"
+msgstr "Entry editing"
+
+#: app_blogs/templates/app_blogs/entry_list.html:6
+msgid "Мои статьи"
+msgstr "My entries"
+
+#: app_blogs/templates/app_blogs/entry_list.html:12
+msgid "Список статей"
+msgstr "List of published entries"
+
+#: app_blogs/templates/app_blogs/entry_list.html:17
+msgid "Последнее изменение"
+msgstr "Last edited at"
+
+#: app_blogs/templates/app_blogs/entry_list.html:23
+msgid "У вас ещё нет статей"
+msgstr "You don't have any entries yet"
+
+#: app_blogs/templates/app_blogs/entry_list.html:26
+msgid "Создать новую статью"
+msgstr "Create a new entry"
+
+#: app_blogs/templates/app_blogs/entry_list.html:27
+msgid "Загрузить из файла"
+msgstr "Upload from file"
+
+#: app_blogs/templates/app_blogs/new-blog.html:6
+msgid "Создание блога"
+msgstr "Blog creation"
+
+#: app_blogs/templates/app_blogs/new-blog.html:11
+msgid "Создание нового блога"
+msgstr "Creation of a new blog"
+
+#: app_blogs/templates/app_blogs/new-blog.html:14
+#: app_blogs/templates/app_blogs/new_entry.html:14
+msgid "Создать"
+msgstr "Create"
+
+#: app_blogs/templates/app_blogs/new_entry.html:6
+msgid "Добавление статьи"
+msgstr "Add an entry"
+
+#: app_blogs/templates/app_blogs/new_entry.html:11
+msgid "Создание новой публикации"
+msgstr "Creation of a new  entry"
+
+#: app_blogs/templates/app_blogs/upload_entry_file.html:6
+msgid "Загрузка статей"
+msgstr "Upload entries"
+
+#: app_blogs/templates/app_blogs/upload_entry_file.html:13
+msgid "Загрузить"
+msgstr "Upload"
+
+#: app_users/apps.py:8
+msgid "пользователи"
+msgstr "users"
+
+#: app_users/forms.py:9
+msgid "Логин"
+msgstr "Login"
+
+#: app_users/forms.py:10
+msgid "Пароль"
+msgstr "Password"
+
+#: app_users/forms.py:14 app_users/forms.py:23
+#: app_users/templates/app_users/profile.html:11
+msgid "Имя"
+msgstr "First Name"
+
+#: app_users/forms.py:15 app_users/forms.py:24
+#: app_users/templates/app_users/profile.html:12
+msgid "Фамилия"
+msgstr "Last name"
+
+#: app_users/models.py:9
+msgid "дата регистрации"
+msgstr "registration date"
+
+#: app_users/models.py:10
+msgid "аватар"
+msgstr "avatar"
+
+#: app_users/models.py:13
+msgid "профиль"
+msgstr "profile"
+
+#: app_users/models.py:14
+msgid "профили"
+msgstr "profiles"
+
+#: app_users/templates/app_users/base_template.html:8
+msgid "Платформа блогов"
+msgstr "Platform for blogging"
+
+#: app_users/templates/app_users/base_template.html:35
+msgid "Здравствуй"
+msgstr "Hello"
+
+#: app_users/templates/app_users/base_template.html:39
+msgid "Профиль"
+msgstr "Profile"
+
+#: app_users/templates/app_users/base_template.html:41
+msgid "Выход"
+msgstr "Logout"
+
+#: app_users/templates/app_users/base_template.html:44
+msgid "Гость"
+msgstr "Guest"
+
+#: app_users/templates/app_users/base_template.html:45
+msgid "Вход"
+msgstr "Sign in"
+
+#: app_users/templates/app_users/base_template.html:46
+#: app_users/templates/app_users/register.html:6
+msgid "Регистрация"
+msgstr "Registration"
+
+#: app_users/templates/app_users/base_template.html:53
+msgid "Главная"
+msgstr "Home"
+
+#: app_users/templates/app_users/login.html:6
+msgid "Аутентификация"
+msgstr "Authentication"
+
+#: app_users/templates/app_users/login.html:13
+msgid "Войти"
+msgstr "Sign in"
+
+#: app_users/templates/app_users/profile-edit.html:6
+msgid "Редактирование профиля пользователя"
+msgstr "User profile editing"
+
+#: app_users/templates/app_users/profile.html:6
+msgid "Профиль пользователя"
+msgstr "User profile"
+
+#: app_users/templates/app_users/profile.html:10
+msgid "Пользователь"
+msgstr "User"
+
+#: app_users/templates/app_users/profile.html:13
+msgid "Дата регистрации"
+msgstr "Registration date"
+
+#: app_users/templates/app_users/profile.html:14
+msgid "Аватар"
+msgstr "Avatar"
+
+#: app_users/templates/app_users/profile.html:16
+msgid "Редактировать профиль"
+msgstr "Edit a profile"
+
+#: app_users/templates/app_users/register.html:13
+msgid "Отправить"
+msgstr "Send"
