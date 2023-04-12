@@ -1,0 +1,17 @@
+{% extends "app_users/base_template.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ block.super }} -
+    {% trans "Профиль пользователя" %}
+{% endblock title%}
+
+{% block content %}
+    <p><b>{% trans "Пользователь" %}:</b> {{ user.username }} </p>
+    <p><b>{% trans "Имя" %}:</b> {{ user.first_name }} </p>
+    <p><b>{% trans "Фамилия" %}:</b> {{ user.last_name }} </p>
+    <p><b>{% trans "Дата регистрации" %}:</b> {{ user.profiles.registration_date }} </p>
+    <p><b>{% trans "Аватар" %}:</b> {{ user.profiles.avatar }} </p>
+    <a href="{% url 'profile-edit' user.profiles.id %}">
+        {% trans "Редактировать профиль" %}</a>
+{% endblock content%}

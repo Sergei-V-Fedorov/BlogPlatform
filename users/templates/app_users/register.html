@@ -1,0 +1,15 @@
+{% extends "app_users/base_template.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ block.super }} -
+    {% trans "Регистрация" %}
+{% endblock title%}
+
+{% block content %}
+    <form method="post">
+    {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">{% trans "Отправить" %}</button>
+    </form>
+{% endblock content %}
