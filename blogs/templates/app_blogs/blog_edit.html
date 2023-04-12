@@ -1,0 +1,16 @@
+{% extends "app_users/base_template.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ block.super }} -
+    {% trans "Редактирование блога" %}
+{% endblock title%}
+
+{% block content %}
+    <form method="post">
+        <h2>{% trans "Редактирование блога" %}</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Редактировать" %}</button>
+    </form>
+{% endblock content%}

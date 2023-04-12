@@ -1,0 +1,16 @@
+{% extends "app_users/base_template.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ block.super }} -
+    {% trans "Добавление статьи" %}
+{% endblock title%}
+
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        <h2>{% trans "Создание новой публикации" %}</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Создать" %}</button>
+    </form>
+{% endblock content%}

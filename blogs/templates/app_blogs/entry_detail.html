@@ -1,0 +1,29 @@
+{% extends "app_users/base_template.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ block.super }} - {{ entry.title }}
+{% endblock title%}
+
+{% block content %}
+    <h2>{{ entry.title }}</h2>
+    <p>Автор:
+        {% if entry.blog.user.first_name and entry.blog.user.last_name %}
+            {{entry.blog.user.first_name}} {{entry.blog.user.last_name}}
+        {% else %}
+            {{entry.blog.user}}
+        {% endif %}
+    </p>
+    <small><b>{% trans "Опубликовано" %}:</b>
+        {{ entry.pub_date }} | <b>{% trans "Изменено" %}:</b> {{ entry.mod_date }} </small>
+    <br><br>
+    <div align="justify"> {{ entry.body_text }} </div>
+    {% if files %}
+        {% for file in files %}
+            <figure>
+                <p><img src="/media/{{ file.file }}" width=200 alt="img_{{forloop.counter}}"></p>
+                <figcapture>{{file.description}}</figcapture>
+            </figure>
+        {% endfor %}
+    {% endif %}
+{% endblock content%}

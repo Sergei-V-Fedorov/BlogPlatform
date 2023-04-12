@@ -1,0 +1,23 @@
+{% extends "app_users/base_template.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ block.super }} -
+    {% trans "Мои блоги" %}
+{% endblock title%}
+
+{% block content %}
+    <h2>{% trans "Список ваших блогов" %}:</h2>
+    {% if blog_list %}
+        <ul>
+        {% for blog in blog_list %}
+            <li><a href="{% url 'entry-list' blog.id %}">{{ blog.name }}</a> |
+                <a href="{% url 'blog-edit' blog.id %}">{% trans "Редактировать" %}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        {% trans "У вас ещё нет блогов" %}
+    {% endif %}
+    <br><br>
+    <p><a href="{% url 'create-blog' %}">{% trans "Создать новый блог" %}</a></p>
+{% endblock content%}

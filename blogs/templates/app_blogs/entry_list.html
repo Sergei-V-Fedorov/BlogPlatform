@@ -1,0 +1,28 @@
+{% extends "app_users/base_template.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ block.super }} -
+    {% trans "Мои статьи" %}
+{% endblock title%}
+
+{% block content %}
+    <h2>{{ blog.name }}</h2>
+    {% if entry_list %}
+        <h4>{% trans "Список статей" %}</h4>
+        <ul>
+        {% for entry in entry_list %}
+            <li><a href="{% url 'detail-entry' entry.id %}">{{ entry.title }}</a> |
+                <span>{% trans "Опубликовано" %}: {{ entry.pub_date }}</span> |
+                <span>{% trans "Последнее изменение" %}: {{ entry.mod_date }}</span> |
+                <a href="{% url 'edit-entry' entry.id %}">{% trans "Редактировать" %}</a></li>
+                <br>
+        {% endfor %}
+        </ul>
+    {% else %}
+        {% trans "У вас ещё нет статей" %}
+    {% endif %}
+    <br><br>
+    <p><a href="{% url 'create-entry' blog.id %}">{% trans "Создать новую статью" %}</a> |
+        <a href="{% url 'upload-entry' blog.id %}">{% trans "Загрузить из файла" %}</a></p>
+{% endblock content%}

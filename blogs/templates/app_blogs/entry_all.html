@@ -1,0 +1,31 @@
+{% extends "app_users/base_template.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ block.super }} -
+    {% trans "Домашняя страница" %}
+{% endblock title%}
+
+{% block content %}
+    <h2>{% trans "Список опубликованных статей" %}:</h2>
+    {% if entry_list %}
+        <ul>
+        {% for entry in entry_list %}
+            <li><a href="{% url 'detail-entry' entry.id %}">{{ entry.title }}</a> |
+                <span><b>{% trans "Автор" %}:</b>
+                    {% if entry.blog.user.first_name and entry.blog.user.last_name %}
+                        {{entry.blog.user.first_name}} {{entry.blog.user.last_name}}
+                    {% else %}
+                        {{entry.blog.user}}
+                    {% endif %}
+                </span> |
+                <span>{% trans "Опубликовано"%}: {{ entry.pub_date }}</span>
+                <br><br>
+                <div>{{ entry.body_text|slice:":100" }}</div>
+            <br><br>
+        {% endfor %}
+        </ul>
+    {% else %}
+        {% trans "Статьи не найдены" %}
+    {% endif %}
+{% endblock content%}
